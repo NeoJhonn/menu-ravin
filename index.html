@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Menu Ravin</title>
+</head>
+<body>
+  <!-- Modal Pedidos-->
+  <div class="modal fade" id="modalPedido" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pedidos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="itens-pedidos"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+          <button type="button" class="btn btn-primary" class="close" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Comanda-->
+  <div class="modal fade" id="modalComanda" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Comanda</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="margin: 0; padding: 0;">
+          <div class="lead" id="itens-pedidos-Comanda">
+            <div id="lista-pedidos"></div>
+            <hr style="width: 100%;">
+            <p style="font-size: 20px; margin-left: 10px;">Total (R$): <span id="valor-total"></span></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="fecharComanda()">Fechar Comanda</button>
+          <button type="button" class="btn btn-primary" class="close" data-dismiss="modal">Sair</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark mb-3">
+      <div class="container-fluid bg-dark d-flex flex-grow-1 align-items-center">
+          <a class="navbar-brand text-white fs-3" style="margin-right: 12rem" href="/index.html">Menu Ravin</a>
+          <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+               aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+              <ul class="navbar-nav flex-grow-1 fs-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white" style="margin-right: 2rem" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" style="margin-right: 2rem" href="">Contato</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      
+      <div class="col-3">
+        <div class="card p-3 list-group rounded-lg">
+          <h3>Categorias</h3>
+          <ul class="list-group-item list-group-item-action custom-list rounded-lg">
+            <li class="list-group-item">Menu</li>
+            <li class="list-group-item active"><a href="#" onclick="selecionarTodosItems(this)">Todos Items</a></li>
+            <li class="list-group-item">Bebidas</li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'bebidas')">Refrigerantes</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'alcolicas')">Cervejas</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'sucos')">Sucos</a></li>
+
+            <li class="list-group-item">Lanches</li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'lanche1')">X-Salada</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'lanche2')">Bife a cavalo</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'lanche3')">Estrogonofe de Frango</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'lanche4')">Batata Frita</a></li>
+
+            <li class="list-group-item">Sobremesas</li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'sobremesa1')">Petit Gateau</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'sobremesa2')">Pudim de Leite</a></li>
+            <li class="list-group-item"><a href="#" onclick="filtrarItensMenu(this, 'sobremesa3')">Torta Banoffe</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-9">
+        <div class="jumbotron jumbotron-fluid bg-info text-white rounded-lg">
+          <div class="container">
+            <div class="text-center container-input-mesa">
+              <Label class="add-mesa">Cadastrar Mesa<input type="text" class="form-control add-mesa" name="input-mesa" id="input-mesa"></Label>
+              <button class="btn btn-primary add-mesa" onclick="cadastrarMesa()">Cadastrar</button>
+              <p class="lead"><span id="nomeMesa"></span></p> 
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <button class="btn btn-success btn-abrirModalComanda" data-toggle="modal" data-target="#modalComanda">Comanda</button>
+              </div>
+
+              <div>
+                <a  class="btn btn-success gap-5" style="margin: auto 10rem;" href="kitchen-board.html" target="_blank">Cozinha</a>
+              </div>
+
+              <div>
+                <button class="btn btn-success btn-abrirModal" data-toggle="modal" data-target="#modalPedido">Status Pedidos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-around align-items-start" style="height: 63vh;" id="div-menuItens">
+          <div><h1 style="text-align: center;">Utilize o menu lateral para fazer o seu pedido!</h1></div>
+        </div>
+          
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer text-muted mt-5">
+    <div class="container"></div>
+      <hr>
+      <p>&copy; 2023 - Restaurante Ravin</p>
+    </div>
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> 
+  <script src="scripts/table-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "utf8": "^3.0.0",
+    "websocket": "^1.0.34"
+  }
+}

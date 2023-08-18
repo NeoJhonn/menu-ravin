@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+			"id": "bbida1",
+			"categoria": "bebidas",
+			"nome": "Coca-Cola",
+			"descricao": "Coca-Cola pet 600ml",
+			"valor": "8.00",
+			"imagem": "coca.jpg"
+		},
+		{
+			"id": "bbida2",
+			"categoria": "bebidas",
+			"nome": "Fanta Laranja",
+			"descricao": "Fanta laranja pet 600ml",
+			"valor": "7.00",
+			"imagem": "fanta.jpg"
+		},
+		{
+			"id": "bbida3",
+			"categoria": "bebidas",
+			"nome": "Guaraná",
+			"descricao": "Guaraná Antarctica pet 600ml",
+			"valor": "9.00",
+			"imagem": "guarana.jpg"
+		},
+		{
+			"id": "bbida4",
+			"categoria": "alcolicas",
+			"nome": "Skol",
+			"descricao": "Cerveja garrafa 600ml",
+			"valor": "10.00",
+			"imagem": "skol.png"
+		},
+		{
+			"id": "bbida5",
+			"categoria": "alcolicas",
+			"nome": "Amstel",
+			"descricao": "Cerveja garrafa 600ml",
+			"valor": "12.00",
+			"imagem": "amstel.jpg"
+		},
+		{
+			"id": "bbida6",
+			"categoria": "sucos",
+			"nome": "Suco de Laranja",
+			"descricao": "Suco de Laranja 350ml",
+			"valor": "15.00",
+			"imagem": "laranja.jpg"
+		},
+		{
+			"id": "bbida7",
+			"categoria": "sucos",
+			"nome": "Suco de Abacaxi",
+			"descricao": "Suco de Abacaxi com Hortelã 350ml",
+			"valor": "15.00",
+			"imagem": "abacaxi.jpg"
+		},
+		{
+			"id": "lche1",
+			"categoria": "lanche1",
+			"nome": "X-Salada",
+			"descricao": "Pão, hamburguer e salada",
+			"valor": "18.00",
+			"imagem": "x-salada.jpg"
+		},
+		{
+			"id": "lche2",
+			"categoria": "lanche2",
+			"nome": "Bife a Cavalo",
+			"descricao": "Arroz, feijão, fritas e bife com ovo",
+			"valor": "25.00",
+			"imagem": "bife-cavalo.jpg"
+		},
+		{
+			"id": "lche3",
+			"categoria": "lanche3",
+			"nome": "Estrogonofe de Frango",
+			"descricao": "Estrogonofe de frango, arroz e fritas",
+			"valor": "30.00",
+			"imagem": "estrogonofe-frango.jpeg"
+		},
+		{
+			"id": "lche4",
+			"categoria": "lanche4",
+			"nome": "Fritas",
+			"descricao": "Porção de Fritas 500g",
+			"valor": "35.00",
+			"imagem": "fritas.png"
+		},
+		{
+			"id": "sobr1",
+			"categoria": "sobremesa1",
+			"nome": "Petit Gateau",
+			"descricao": "Duas bolas de sorvete e bolo com calda de chocolate",
+			"valor": "42.00",
+			"imagem": "petit.jpg"
+		},
+		{
+			"id": "sobr2",
+			"categoria": "sobremesa2",
+			"nome": "Pudim de Leite",
+			"descricao": "Pudim de Leite banho Maria",
+			"valor": "25.00",
+			"imagem": "pudim-leite.jpg"
+		},
+		{
+			"id": "sobr3",
+			"categoria": "sobremesa3",
+			"nome": "Torta Banoffe",
+			"descricao": "Torta recheada com banana e leite condensado",
+			"valor": "28.00",
+			"imagem": "banoffe.jpg"
+		}
+	]
+}

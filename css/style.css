@@ -1,0 +1,177 @@
+body {
+  height: 100%;
+  font-family: Inter, Tahoma, Geneva, Verdana, sans-serif;
+  background: #b9c9c7;
+}
+
+
+/*Animação*/
+.fade-in {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  } to {
+    opacity: 1;
+    border: 2px solid #8dc9d4;
+    border-radius: 10px;
+  }
+}
+
+.fade-out {
+  animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    border: 2px solid #8dc9d4;
+    border-radius: 5px;
+  } to {
+    opacity: 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+}
+/*Animação   ^^*/
+
+
+.inactive {
+  display: none !important;
+}
+
+.custom-list li.active a {
+  color: #fff; /* Cor branca */
+}
+
+.custom-list li.active {
+  border-radius: 6px;
+}
+
+.image-container {
+  width: 180px; 
+  height: 240px; 
+  border: 2px solid #c0acac; 
+  background-size: cover; 
+  background-position: center;
+}
+
+#div-menuItens .itens-menu .btn, strong, p {
+  font-size: 13px;
+  
+}
+
+#div-menuItens .itens-menu h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+#div-menuItens .itens-menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#div-menuItens {
+  height: 75vh; 
+  overflow: auto; 
+  z-index: 999;
+}
+
+.col-9 {
+  height: 25vh;
+}
+
+.col-3 .card h3 {
+  font-weight: 600;
+}
+
+body {
+  width: 100% !important;
+}
+
+/*Tornar a página responsiva*/
+@media (max-width: 720px) {
+  .row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .col-3 .card {
+    position: unset !important;
+    width: 40rem !important;
+    padding-right: 0 !important;
+    padding-left: 0!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    margin-bottom: 20px;
+    margin-left: -12px;
+  }
+
+  #div-menuItens {
+    height: 70vh!important; 
+  }
+
+  .col-9 {
+    height: unset!important; 
+  }
+  
+  #div-menuItens .itens-menu .btn, strong, p {
+    font-size: 13px!important;
+  }
+
+  #div-menuItens .itens-menu h3 {
+    font-size: 18px!important;
+  }
+
+  #div-menuItens .itens-menu .btn, .form-control {
+    width: 140px !important;
+  }
+
+  .col-9 {
+    position: unset !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    flex: unset !important;
+    max-width: unset !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+  }
+
+  .col-9 .jumbotron {
+    width: 40rem !important;
+    margin-left: 3px;
+    height: 10rem;
+  }
+
+  .col-9 #div-menuItens {
+    width: 40rem !important;
+  }
+
+  header {
+    min-width: 40rem !important;
+  }
+
+  .jumbotron {
+    padding: 5px!important;
+    
+  }
+
+  #div-menuItens {
+    gap: 5px !important;
+  }
+ 
+  
+}
+ 
