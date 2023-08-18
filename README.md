@@ -59,7 +59,7 @@ adicionar um novo pedido e o mesmo notifica a dashboard a cozinha e um novo pedi
 Esse projeto está sob a licença MIT.
 
 <p>
-  Deploy: 
+  Deploy: https://neojhonn.github.io/menu-ravin/
 </p>
 ---
 
