@@ -16,7 +16,25 @@ Aplicação Web que desenvolvi para disciplina de HTML/CSS/Javascript +Devs2Blu 
 
 <br>
 <p align="center">
-   <img alt="Menu Ravin" src=""
+   <img alt="Ravin_menu_1" src="https://github.com/NeoJhonn/menu-ravin/blob/main/.github/Ravin_menu_1.png"
+  width="80%">
+</p>
+
+<br>
+<p align="center">
+   <img alt="Ravin_menu_2" src="https://github.com/NeoJhonn/menu-ravin/blob/main/.github/Ravin_menu_2.png"
+  width="80%">
+</p>
+
+<br>
+<p align="center">
+   <img alt="Ravin_menu_1_status_pedidos" src="https://github.com/NeoJhonn/menu-ravin/blob/main/.github/Ravin_menu_1_status_pedidos.png"
+  width="80%">
+</p>
+
+<br>
+<p align="center">
+   <img alt="Ravin_menu_1_comanda_pedidos" src="https://github.com/NeoJhonn/menu-ravin/blob/main/.github/Ravin_menu_1_comanda_pedidos.png"
   width="80%">
 </p>
 
